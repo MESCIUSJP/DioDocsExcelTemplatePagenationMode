@@ -1,10 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using GrapeCity.Documents.Excel;
 using System.Data;
 
 Console.WriteLine("DioDocsで明細行数を固定したExcel帳票を作成する");
 
 // 新規ワークブックの作成
-var workbook = new GrapeCity.Documents.Excel.Workbook();
+var workbook = new Workbook();
 
 // 帳票テンプレートファイルを読み込む
 workbook.Open("Template_Pagination.xlsx");
